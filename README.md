@@ -13,7 +13,7 @@ targets (or similar) to correctly pass path to the configs to the tools
 in question.
 
 ```bash
-git subtree add --prefix lint-configs https://github.com/StackStorm/lint-config.git master --squash
+git subtree add --prefix lint-configs https://github.com/StackStorm/lint-configs.git master --squash
 ```
 
 To use it (example with pylint)
@@ -26,5 +26,5 @@ pylint -E --rcfile=./lint-configs/python/.pylintrc
 And once you want to pull changes / updates from the lint-configs repository:
 
 ```bash
-git subtree pull --prefix lint-configs https://github.com/StackStorm/lint-config.git master --squash
+git subtree pull --prefix lint-configs https://github.com/StackStorm/lint-configs.git master --squash
 ```
